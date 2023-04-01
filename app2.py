@@ -1,12 +1,12 @@
 import streamlit as st
 st.title("BMI Calculator App")
 
+st.camera_input("smaile")
 weight = st.number_input("What is your weight(KG)")
 hight = st.number_input("What is your hight(Meters)")
 
 
 
-st.camera_input("smaile")
 def bmi_calc(weight,hight):
     bmi = round(weight / (hight ** 2),1)
     if bmi > 29.9:
